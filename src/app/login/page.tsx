@@ -11,16 +11,14 @@ interface Inputs {
 }
 
 export default function LoginPage() {
+    const [showPassword, setShowPassword] = useState(false)
+
     const { register, handleSubmit, formState: { errors }, } = useForm<Inputs>()
 
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
-        console.log('aqui')
-        UserLogin(data.email, data.password)
-        console.log(data)
-
+    const onSubmit: SubmitHandler<Inputs> = async (data) => {
+        const response = await UserLogin(data.email, data.password)
+        console.log(response)
     }
-
-    const [showPassword, setShowPassword] = useState(false)
 
     return (
         <div className="w-full h-screen flex justify-center items-center bg-gray-backgorund">
