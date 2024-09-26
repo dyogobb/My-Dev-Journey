@@ -13,3 +13,8 @@ export interface CreateUserInput {
     password: string,
     password_confirmation: string,
 }
+
+export interface LoginInputs {
+    email: string,
+    password: string,
+}
