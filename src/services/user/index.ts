@@ -9,7 +9,7 @@ export async function UserLogin(email: string, password: string) {
         email: email,
         password: password
     }).then((res: AxiosResponse)=> {
-        return res.data
+        return {status: res.status, data: res.data.data}
     }).catch((error: AxiosError) => {
         return error.response
     })
