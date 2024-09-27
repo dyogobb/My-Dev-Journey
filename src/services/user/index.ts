@@ -30,8 +30,6 @@ export async function CreateUser(data: CreateUserInput) {
     }).then((res: AxiosResponse)=> {
         return {status: res.status, data: res.data}
     }).catch((error: AxiosError)=> {
-        const response = error.response?.data
-        console.log(response)
         return error.response
     })
 
