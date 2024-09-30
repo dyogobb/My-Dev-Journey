@@ -50,7 +50,7 @@ export default function LoginPage() {
 
     return (
         <div className="w-full h-screen flex justify-center items-center bg-gray-backgorund">
-            <div className="md:rounded-md flex max-md:flex-col justify-center overflow-hidden max-w-7xl shadow-lg w-full lg:w-[85%] xl:w-3/4">
+            <div className="md:rounded-md flex max-md:flex-col justify-center overflow-hidden max-w-7xl shadow-lg w-full md:w-[90%] xl:w-3/4 ">
                 <div className="text-center justify-center items-center flex flex-col gap-4 bg-purple md:px-20 px-6 py-20 max-md:w-full w-[65%] xl:w-2/4">
                     <p className="text-3xl font-bold text-white">My Dev Journey</p>
                     <p className="text-white max-w-[420px]">Novo por aqui? Cadastre-se agora e comece a organizar sua jornada de aprendizado!</p>
